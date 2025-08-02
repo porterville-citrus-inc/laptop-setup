@@ -9,7 +9,7 @@ setup_error() {
   echo "Look above for any errors and try to correct them and run again."
   echo
   echo "If you are unable to fix the error, you can report an issue:"
-  echo "https://github.com/shift3/laptop/issues"
+  echo "https://github.com/porterville-citrus-inc/laptop-setup/issues"
   echo
   echo "Please attach the logs printed above this message to help us"
   echo "debug the issue."
@@ -159,5 +159,5 @@ echo "Installation and Dotfiles have been completed successfully!"
 echo "If this is your first time running this script, please reboot"
 echo "your computer now. Enjoy the setup :)"
 fancy_echo "For more information about your new setup see:"
-echo "https://github.com/Shift3/laptop/blob/master/README.md"
+echo "https://github.com/porterville-citrus-inc/laptop-setup/blob/master/README.md"
 fancy_echo "==========================================================="

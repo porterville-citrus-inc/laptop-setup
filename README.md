@@ -1,12 +1,9 @@
-Shift3 Laptop Setup and Dotfiles
-================================
-
-[![CircleCI](https://circleci.com/gh/Shift3/laptop.svg?style=svg&circle-token=e273355c5438b649729962059454a44bd2b255a4)](https://circleci.com/gh/Shift3/laptop)
+Laptop Setup and Dotfiles
+=========================
 
 The scripts contained in this repo will setup your Mac, Ubuntu, Debian, or
 Fedora computer with a base development environment, installing tools that we
-find helpful and configuring them with sensible defaults. There are separate
-instructions for configuring Windows found [here](https://github.com/Shift3/standards-and-practices#windows).
+find helpful and configuring them with sensible defaults.
 
 It also maintains your dotfiles and provides a way for you to customize them to
 your liking if desired.
@@ -26,8 +23,8 @@ it and clone the repo into it.
 # Clone the repo (or download a zip file for a temporary setup)
 cd
 mkdir src && cd src
-git clone git@github.com:Shift3/laptop.git
-cd laptop
+git clone git@github.com:porterville-citrus-inc/laptop-setup.git
+cd laptop-setup
 
 # run the setup script
 ./setup
@@ -202,33 +199,3 @@ if [ ! -d ~/.rbenv ]; then
   git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 fi
 ```
-
-Reporting Bugs
---------------
-
-CircleCI is run any time we push to the repository which runs the Mac, Ubuntu
-and Fedora installs to make sure everything works properly at least on a smoke
-test. If you come across any issues running the install script, feel free to
-open an issue.
-
-When creating issues, please attach the entire console output of the script to
-help us track down the issue more quickly.
-
-Contributing
-------------
-
-Pull requests are appreciated. There will be a delineation made between what
-should be a user setting and what will be a feature widely enough used that it
-should make it into our standard dotfiles. This will be an ongoing conversation
-and will likely shift and mutate over time. Something rejected as a standard at
-one point in time, may be accepted in the future as our shop's standards change.
-
-User configurations should be done in your local `*.user` files. For anything else,
-pull request or feature suggestions are appreciated. All pull requests go
-through CI and are smoke tested against Mac, Ubuntu, and Fedora.
-
-Supported Platforms currently are limited to the latest versions of each
-detected OS (Mac, Ubuntu, Debian, Fedora.) As this is already rather wide, we
-will likely not consider supporting additional platforms as we would like to
-keep the maintenance burden as low as possible. The Windows configuration flow
-is handled separately by Windows users on the team.
